@@ -1,6 +1,19 @@
 // Portfolio projects data
 export const projectsData = [
   {
+    id: 5,
+    title: "Sentinel: Enterprise Data Quality Pipeline & AI Assistant",
+    shortDescription: "An industrial 4-tier data quality validation engine with DuckDB Parquet exporter, live remediation console, and a ChatGPT-style RAG AI assistant.",
+    course: "Personal Project",
+    semester: "MSc at DTU",
+    problemStatement: "Industrial IoT pipelines ingest massive volumes of sensor telemetry, but invalid schemas, duplicate records, unauthorized operators, and statistical outliers degrade analytical dashboards and downstream ML models. Existing solutions lack real-time interactive quarantine remediation and automated AI root-cause diagnosis.",
+    contribution: "Engineered a 4-tier validation pipeline (Pydantic schemas, SHA-256 deduplication, cross-field business authorization rules, Z-score outlier detection). Developed an interactive Streamlit web cockpit featuring a Live Quarantine Remediation Console, DuckDB-powered Apache Parquet Data Lake Exporter (queryable in 0.005s), Power BI star-schema exporter, and a ChatGPT-style Conversational AI Assistant using OpenRouter API and real-time telemetry RAG.",
+    technologies: ["Python", "Streamlit", "OpenRouter API", "DuckDB", "Apache Parquet", "Pydantic", "SQLite", "Plotly", "Power BI", "RAG", "GitHub Actions"],
+    streamlitUrl: "https://sentinel-data-pipeline-gwezsqrxjcxi62ekpuljmx.streamlit.app/?embed=true",
+    liveDemoUrl: "https://sentinel-data-pipeline-gwezsqrxjcxi62ekpuljmx.streamlit.app/",
+    githubUrl: "https://github.com/teja-mr-1/Sentinel-Data-Pipeline",
+  },
+  {
     id: 1,
     title: "Sparse MoE-QLoRA for Danish Legal QA",
     shortDescription: "A student research project testing 4-bit model quantization, expert adapter routing, and document retrieval to answer Danish legal questions on a single T4 GPU.",

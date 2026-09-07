@@ -66,8 +66,38 @@ export default function ProjectDetail() {
       <section className="w-full py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-16">
           
-          {/* Demo Video */}
-          {project.videoUrl && (
+          {/* Live Web Demo or Video Demo */}
+          {project.streamlitUrl || project.liveDemoUrl ? (
+            <div className="space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <h2 className="text-3xl font-black text-gray-900">🚀 Live Interactive Web Cockpit</h2>
+                  <p className="text-sm font-semibold text-gray-500 mt-1">Interact with the live deployed application below or open full app in a new tab</p>
+                </div>
+                <a
+                  href={project.liveDemoUrl || project.streamlitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white font-bold text-sm rounded-xl shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all"
+                >
+                  <span>Open Full Application</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+              <div className="relative w-full h-[680px] bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border-2 border-blue-500/30">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={project.streamlitUrl || project.liveDemoUrl}
+                  title={project.title}
+                  frameBorder="0"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          ) : project.videoUrl ? (
             <div className="space-y-6">
               <h2 className="text-3xl font-black text-gray-900">Project Demo</h2>
               <div className="relative w-full bg-gray-900 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
@@ -85,7 +115,7 @@ export default function ProjectDetail() {
                 </div>
               </div>
             </div>
-          )}
+          ) : null}
 
           {/* Problem Statement */}
           <div className="space-y-6 py-8 border-t border-b border-gray-200">
