@@ -10,6 +10,7 @@ export const projectsData = [
     contribution: "Built an automated multimodal signal extraction pipeline in Python measuring acoustic pause/hesitation duration, clipping ratio, SNR, and facial head pose/blink metrics. Engineered a quality gatekeeper that flags corrupt inputs and automatically curates a cryptographically hashed 'Gold Slice' benchmark test suite (SHA-256) for reproducible regression testing. Developed an interactive Streamlit web application enabling users to upload and evaluate conversational video and audio streams with real-time waveform and prosodic diagnostics.",
     technologies: ["Python", "Streamlit", "Plotly", "FFmpeg", "Signal Processing", "Pydantic", "Scipy", "Multimodal AI", "Benchmarking"],
     liveDemoUrl: "./behaviorbench_report.html",
+    streamlitUrl: "https://behaviorbench-multimodal-quality-harness-r3ikmwvprrtirpfemzzcp.streamlit.app/?embed=true",
     githubUrl: "https://github.com/teja-mr-1/BehaviorBench-Multimodal-Quality-Harness",
   },
   {
