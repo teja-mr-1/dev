@@ -1,6 +1,18 @@
 // Portfolio projects data
 export const projectsData = [
   {
+    id: 6,
+    title: "BehaviorBench: Multimodal Quality & Benchmark Suite",
+    shortDescription: "An automated data quality gatekeeper and 'Gold Slice' benchmark curation pipeline for real-time behavioral AI models.",
+    course: "Personal Project",
+    semester: "MSc at DTU",
+    problemStatement: "Non-verbal conversational AI requires processing noisy real-world video and audio streams. Unfiltered microphone clipping, underexposed lighting, and audio-video synchronization drift degrade multimodal model training and distort evaluation benchmarks.",
+    contribution: "Built an automated multimodal signal extraction pipeline in Python measuring acoustic pause/hesitation duration, clipping ratio, SNR, and facial head pose/blink metrics. Engineered a quality gatekeeper that flags corrupt inputs and automatically curates a cryptographically hashed 'Gold Slice' benchmark test suite (SHA-256) for reproducible regression testing. Developed an interactive Streamlit web application enabling users to upload and evaluate conversational video and audio streams with real-time waveform and prosodic diagnostics.",
+    technologies: ["Python", "Streamlit", "Plotly", "FFmpeg", "Signal Processing", "Pydantic", "Scipy", "Multimodal AI", "Benchmarking"],
+    liveDemoUrl: "./behaviorbench_report.html",
+    githubUrl: "https://github.com/teja-mr-1/BehaviorBench-Multimodal-Quality-Harness",
+  },
+  {
     id: 5,
     title: "Sentinel: Data Quality Pipeline & AI Assistant",
     shortDescription: "A data engineering pipeline featuring 4-tier validation rules, interactive quarantine remediation console, Apache Parquet / Power BI exports, and an AI chat assistant.",
