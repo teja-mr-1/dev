@@ -44,7 +44,18 @@ export default function Home() {
                 <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-                Download CV
+                CV
+              </a>
+              <a
+                href="./DTU_Grade_Sheet_Teja_252744.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg font-semibold text-sm transition-all flex items-center gap-1.5"
+              >
+                <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Grade Sheet (DTU)
               </a>
               <button 
                 onClick={() => setIsContactOpen(true)}
@@ -107,6 +118,17 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                   Download CV
+                </a>
+                <a 
+                  href="./DTU_Grade_Sheet_Teja_252744.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 border-2 border-emerald-600 text-emerald-600 font-bold rounded-xl hover:bg-emerald-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 text-center flex items-center justify-center gap-2"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  DTU Grade Sheet
                 </a>
               </div>
             </div>
@@ -241,6 +263,10 @@ export default function Home() {
                 <li><a href="./Maddela_Raviteja_CV.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:w-3 transition-all"></span>
                   Download CV
+                </a></li>
+                <li><a href="./DTU_Grade_Sheet_Teja_252744.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full group-hover:w-3 transition-all"></span>
+                  DTU Grade Sheet
                 </a></li>
                 <li><button onClick={() => setIsContactOpen(true)} className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:w-3 transition-all"></span>
