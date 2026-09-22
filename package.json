@@ -8,6 +8,8 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "deploy:dev": "npm run build && gh-pages -d dist -r git@github.com:teja-mr-1/dev.git",
+    "deploy:all": "npm run build && gh-pages -d dist && gh-pages -d dist -r git@github.com:teja-mr-1/dev.git",
     "lint": "eslint .",
     "preview": "vite preview"
   },
